@@ -47,7 +47,5 @@ const digitButtons =
 digitButtons.forEach(button => {
     button.addEventListener("click", () => {
         display.textContent += button.textContent
-    });
-});
-
-
+    })
+})    

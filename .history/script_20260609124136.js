@@ -38,16 +38,4 @@ function operate(operator, a, b) {
 // create variable 
 let firstNumber = "";
 let secondNumber = "";
-let currentOperator = "";
-
-const display = document.querySelector("#display");
-const digitButtons =
-    document.querySelectorAll(".digit");
-
-digitButtons.forEach(button => {
-    button.addEventListener("click", () => {
-        display.textContent += button.textContent
-    });
-});
-
-
+let curre
