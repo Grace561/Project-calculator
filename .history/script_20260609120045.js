@@ -31,6 +31,5 @@ function operate(operator, a, b) {
                     return multiply(a, b);
 
                     case "/":
-                        return divide(a, b);
     }
 }

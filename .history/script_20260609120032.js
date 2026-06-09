@@ -30,7 +30,6 @@ function operate(operator, a, b) {
                 case "*":
                     return multiply(a, b);
 
-                    case "/":
-                        return divide(a, b);
+                    
     }
 }
