@@ -65,4 +65,5 @@ const result = operate(
     firstNumber,
     secondNumber
 );
-display.textContent = result;
+
+

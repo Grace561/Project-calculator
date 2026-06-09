@@ -58,11 +58,3 @@ display.textContent = "";
 
 // store second Number
 secondNumber = display.textContent;
-
-// make equals Work
-const result = operate(
-    currentOperator,
-    firstNumber,
-    secondNumber
-);
-display.textContent = result;

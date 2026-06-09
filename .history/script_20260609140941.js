@@ -64,5 +64,4 @@ const result = operate(
     currentOperator,
     firstNumber,
     secondNumber
-);
-display.textContent = result;
+)
