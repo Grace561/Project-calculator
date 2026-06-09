@@ -72,6 +72,4 @@ clearButton.addEventListener("click", () => {
     firstNumber = "";
     secondNumber = "";
     currentOperator = "";
-
-    display.textContent = "0";
-}); 
+}) 

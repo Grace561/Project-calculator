@@ -74,4 +74,4 @@ clearButton.addEventListener("click", () => {
     currentOperator = "";
 
     display.textContent = "0";
-}); 
+}) 

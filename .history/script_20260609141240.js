@@ -67,11 +67,4 @@ const result = operate(
 );
 display.textContent = result;
 
-// clear button
-clearButton.addEventListener("click", () => {
-    firstNumber = "";
-    secondNumber = "";
-    currentOperator = "";
-
-    display.textContent = "0";
-}); 
+// clear button 
