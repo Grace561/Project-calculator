@@ -7,7 +7,7 @@ let shouldReset = false;
 
 const display = document.querySelector("#display");
 
-const buttons = document.querySelectorAll("button");
+const value = document.querySelectorAll("value");
 
 
 
@@ -62,14 +62,11 @@ function operate(a,operator,b){
 
 
 
-function updateDisplay(value){
+// function updateDisplay(value){
 
-    display.textContent=value;
+//     display.textContent=value;
 
-}
-
-
-
+// }
 
 buttons.forEach(button=>{
 
@@ -78,6 +75,13 @@ button.addEventListener("click",()=>{
 
 
 let value = button.textContent;
+if (display.textContent === "0") {
+    display.textContent = value;
+}
+else {
+    display.textContent += value;
+}
+
 
 
 // clear
@@ -120,13 +124,9 @@ display.textContent="";
 shouldReset=false;
 
 }
-if(display.textContent === "0"){
-    display.textContent = value;
-}
-else{
-    display.textContent += value;
-}
 
+
+display.textContent += value;
 
 
 return;

@@ -1,4 +1,5 @@
 
+
 let firstNumber = "";
 let secondNumber = "";
 let operator = "";
@@ -78,6 +79,8 @@ button.addEventListener("click",()=>{
 
 
 let value = button.textContent;
+i
+
 
 
 // clear
@@ -120,13 +123,9 @@ display.textContent="";
 shouldReset=false;
 
 }
-if(display.textContent === "0"){
-    display.textContent = value;
-}
-else{
-    display.textContent += value;
-}
 
+
+display.textContent += value;
 
 
 return;

@@ -80,6 +80,7 @@ button.addEventListener("click",()=>{
 let value = button.textContent;
 
 
+
 // clear
 
 if(value==="C"){
@@ -88,8 +89,6 @@ firstNumber="";
 secondNumber="";
 operator="";
 updateDisplay("0");
-
-return;
 
 }
 
@@ -120,13 +119,9 @@ display.textContent="";
 shouldReset=false;
 
 }
-if(display.textContent === "0"){
-    display.textContent = value;
-}
-else{
-    display.textContent += value;
-}
 
+
+display.textContent += value;
 
 
 return;

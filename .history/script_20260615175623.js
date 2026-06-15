@@ -1,4 +1,5 @@
 
+
 let firstNumber = "";
 let secondNumber = "";
 let operator = "";
@@ -77,7 +78,13 @@ buttons.forEach(button=>{
 button.addEventListener("click",()=>{
 
 
-let value = button.textContent;
+// let value = button.textContent;
+// if (display.textContent === "0"){
+//     display.textContent = value;
+// }
+// else {
+//     display.textContent += value;
+// }
 
 
 // clear
@@ -120,13 +127,8 @@ display.textContent="";
 shouldReset=false;
 
 }
-if(display.textContent === "0"){
-    display.textContent = value;
-}
-else{
-    display.textContent += value;
-}
 
+if (display.textContent === "0"){}
 
 
 return;

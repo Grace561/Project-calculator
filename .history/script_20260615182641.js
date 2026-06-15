@@ -120,13 +120,9 @@ display.textContent="";
 shouldReset=false;
 
 }
-if(display.textContent === "0"){
-    display.textContent = value;
-}
-else{
-    display.textContent += value;
-}
+if(display)
 
+display.textContent += value;
 
 
 return;
