@@ -134,6 +134,53 @@ return;
 }
 
 
+
+
+// operators
+
+// if(["+","-","×","÷"].includes(value)){
+
+// firstNumber = display.textContent;
+
+// operator=value;
+
+// shouldReset=true;
+
+
+// return;
+// }
+
+
+
+
+// // equals
+
+// if(value==="="){
+
+
+// secondNumber = display.textContent;
+
+
+// let answer = operate(
+// firstNumber,
+// operator,
+// secondNumber
+// );
+
+
+
+// updateDisplay(
+// Math.round(answer*100000)/100000
+// );
+
+
+// firstNumber="";
+// secondNumber="";
+// operator="";
+
+
+// }
+
 // operators
 
 if(["+","-","×","÷"].includes(value)){
@@ -185,14 +232,7 @@ if (value ==="="){
     let answer = operate(
         firstNumber,
         operator,
-        secondNumber
-    );
-    updateDisplay(
-        Math.round(answer*100000)/100000
-    );
-    firstNumber="";
-    secondNumber="";
-    operator="";
+    )
 }
 
 });

@@ -134,66 +134,58 @@ return;
 }
 
 
+
+
 // operators
 
 if(["+","-","×","÷"].includes(value)){
 
-
-    // check if there is already a calculation waiting
     if(firstNumber !== "" && operator !== "" && !shouldReset){
+        secondNumber = 
+
+// firstNumber = display.textContent;
+
+operator=value;
+
+shouldReset=true;
 
 
-        secondNumber = display.textContent;
-
-
-        let answer = operate(
-            firstNumber,
-            operator,
-            secondNumber
-        );
-
-
-        answer = Math.round(answer * 100000) / 100000;
-
-
-        updateDisplay(answer);
-
-
-        // result becomes the new first number
-        firstNumber = answer;
-
-
-    } 
-    else {
-
-        firstNumber = display.textContent;
-
+return;
     }
-
-
-    operator = value;
-
-    shouldReset = true;
-
-
-    return;
 }
 
-if (value ==="="){
-    secondNumber = display.textContent;
 
-    let answer = operate(
-        firstNumber,
-        operator,
-        secondNumber
-    );
-    updateDisplay(
-        Math.round(answer*100000)/100000
-    );
-    firstNumber="";
-    secondNumber="";
-    operator="";
+
+
+// equals
+
+if(value==="="){
+
+
+secondNumber = display.textContent;
+
+
+let answer = operate(
+firstNumber,
+operator,
+secondNumber
+);
+
+
+
+updateDisplay(
+Math.round(answer*100000)/100000
+);
+
+
+firstNumber="";
+secondNumber="";
+operator="";
+
+
 }
+
+
 
 });
 
